@@ -1,3 +1,4 @@
+var expect = require('expect');
 const buscarAmigo = require('../03.js');
 
 describe('buscarAmigo', function() {

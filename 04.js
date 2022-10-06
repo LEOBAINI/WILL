@@ -11,10 +11,25 @@ function numeroSimetrico(num) {
   // Un número es simétrico cuando es igual a su reverso.
   // Ej:
   // numeroSimetrico(11711) devuelve true
+   // Tu código:
+  var convertir=numero => Number (numero);
+  var numOrig=Array.from(String(num),convertir);
+  var invertido=[];
 
-  // Tu código:
+  for(let i=numOrig.length-1;i>=0;i--){
+    invertido.push(numOrig[i]);
+  }
 
+  for(var i=0;i<=numOrig.length;i++){
+    if(numOrig[i]!=invertido[i]){
+      return false;
+
+    }
+  }
+  return true;
 }
+
+console.log(numeroSimetrico(98889));
 
 // No modifiques nada debajo de esta linea //
 

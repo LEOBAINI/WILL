@@ -1,3 +1,4 @@
+var expect = require('expect');
 const numeroSimetrico = require('../04.js');
 
 describe('numeroSimetrico', function() {

@@ -1,3 +1,4 @@
+var expect = require('expect');
 const soloNumeros = require('../01.js');
 
 describe('soloNumeros', function() {

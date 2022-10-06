@@ -1,3 +1,4 @@
+var expect = require('expect');
 const pluck = require('../05.js');
 
 describe('pluck', function() {

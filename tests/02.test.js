@@ -1,3 +1,4 @@
+var expect = require('expect');
 const stringMasLarga = require('../02.js');
 
 describe('stringMasLarga', function() {

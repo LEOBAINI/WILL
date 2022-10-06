@@ -14,8 +14,25 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
+  var noCoincidence=
+  {nombre:'No encontrado',
+   edad:'No encontrado'
+  };
+  
+
+  for (var i=0;i<amigos.length;i++){
+    if(amigos[i].nombre==nombre)
+   
+      return amigos[i];
+  }
+
+  return noCoincidence ;
   
 }
+
+var amigos = [{ nombre: 'toni', edad: 33 } , { nombre: 'Emi', edad: 25 }];
+console.log(buscarAmigo(amigos, 'toni')); //debe devolver { nombre: 'toni', edad: 33 };
+console.log(buscarAmigo(amigos, 'Emi'));
 
 // No modifiques nada debajo de esta linea //
 
